@@ -1,0 +1,40 @@
+@import '../../sass/main.scss';
+$color-primary : #fff;
+$color-background: url('../../assets/home_cover.png');
+
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+.banner {
+  @extend .banner__default;
+  background-image: $color-background;
+  margin: 55px auto;
+  height: 12rem;
+
+@media screen and (max-width: 700px){
+  height: auto;
+}}
+.banner__text {
+  position: relative;
+  color: $color-primary;
+  font-size: 37px;
+  top: 40%;
+}
+
+.banner__default {
+  @include border-radius(11px);
+  @include flex-center;
+  max-width: 95%;
+}
+
+.banner p {
+  color: rgb(47, 47, 61);
+}

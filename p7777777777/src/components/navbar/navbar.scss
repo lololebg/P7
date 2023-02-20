@@ -1,0 +1,13 @@
+@import '../../sass/main.scss';
+
+.Nav{
+    color: $color-secondary;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 4.5rem;
+    &_item{
+        &_active{
+            position: relative;
+            color: $color-secondary;
+            text-decoration: underline solid $color-secondary; 
+    } } }
