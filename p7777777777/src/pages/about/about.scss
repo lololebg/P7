@@ -4,8 +4,10 @@
     width: 100%;
    .collapse{
         margin: 3rem auto;
-        @media screen and (max-width: 600px){
-            margin: 20px auto;
-        }
+        @media screen and (max-width: 1200px){
+            margin: 38px auto;
+            width: 92%;
+        } 
+      
     }
 }

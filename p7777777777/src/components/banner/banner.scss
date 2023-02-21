@@ -1,7 +1,7 @@
 @import '../../sass/main.scss';
 $color-primary : #fff;
-$color-background: url('../../assets/home_cover.png');
-
+$color-background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/home_cover.png');
+$color-backgroundu: url('../../assets/about_cover.png');
 
 @mixin flex-center {
   display: flex;
@@ -13,14 +13,18 @@ $color-background: url('../../assets/home_cover.png');
   border-radius: $radius;
 }
 
-.banner {
+.banner_about {
   @extend .banner__default;
-  background-image: $color-background;
+  background-image:  $color-backgroundu;
+  background-size: cover;
   margin: 55px auto;
-  height: 12rem;
+  height: 13rem;
 
-@media screen and (max-width: 700px){
-  height: auto;
+  @media screen and (max-width: 550px){
+    position: relative;
+    margin: 25px auto;
+    height: 7rem;
+    bottom: 10px;
 }}
 .banner__text {
   position: relative;
@@ -29,6 +33,13 @@ $color-background: url('../../assets/home_cover.png');
   top: 40%;
 }
 
+.banner{
+  @extend .banner__default;
+   background-image:  $color-background;
+   background-size: cover;
+   margin: 55px auto;
+   height: 10rem;
+  }
 .banner__default {
   @include border-radius(11px);
   @include flex-center;
@@ -36,5 +47,12 @@ $color-background: url('../../assets/home_cover.png');
 }
 
 .banner p {
-  color: rgb(47, 47, 61);
+  color: #fff;
+  font-size: 35px;
+  @media screen and (max-width: 550px){
+    font-size: 20px;
+}}
+
+.about{
+  background-image: $color-backgroundu;
 }

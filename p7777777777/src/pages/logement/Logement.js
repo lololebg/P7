@@ -1,3 +1,5 @@
+
+
 import './logement.scss'
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
@@ -34,8 +36,8 @@ export default function Logement() {
       <Header />
       <Carousel imageSlider={pictures} />
       <main className="Logement">
-        <div className="contenu">
-          <div className="infos">
+        <div className="Logement_contenu">
+          <div className="Logement_contenu_description">
             <h1>{title}</h1>
             <p>{location}</p>
             <div>
@@ -44,16 +46,16 @@ export default function Logement() {
               ))}
             </div>
           </div>
-          <div className="Right">
+          <div className="Logement_contenu_infos">
             <div>
-              <div className="Name">
+              <div className="Logement_contenu_infos_nom">
                 <span>{firstName}</span>
                 <span>{lastName}</span>
               </div>
               <img src={picture} alt={`... (${name})`} />
             </div>
 
-            <div className="Images">
+            <div className="etoile">
          {Array.from({ length: 5 }, (_, index) => (
                 <img
                   key={index}
@@ -64,11 +66,11 @@ export default function Logement() {
             </div>
           </div>
         </div>
-        <div className="Collapse">
-          <div className="Item">
+        <div className="Logement_collapse">
+          <div className="Logement_collapse_item">
             <Collapse title="description" content={description} />
           </div>
-          <div className="Items">
+          <div className="Logement_collapse_item">
             <Collapse title="Équipements" content={equipments} />
           </div>
         </div>
@@ -77,3 +79,4 @@ export default function Logement() {
     </>
   );
 }
+

@@ -18,7 +18,7 @@ About(true)
 //Enfin "return" définit la vue du composant. La classe HTML sera "banner_about" si "about" est "true", sinon elle sera "banner". 
 //Si "about" est "false", le composant affichera également le texte "Chez vous, partout et ailleurs".
 return (
-<section className={about ? 'banner' : 'banner'}>
+<section className={about ? 'banner_about' : 'banner'}>
 {!about && <p>Chez vous, partout et ailleurs</p>}
 </section>
 )
