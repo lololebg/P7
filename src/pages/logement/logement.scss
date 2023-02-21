@@ -1,0 +1,139 @@
+@import '../../sass/main.scss';
+$color-primary : #fff;
+.Logement{
+    &_contenu{
+        @include Display(row, space-between, flex-start);
+        color: $color-secondary;
+        width: 97%;
+        position: relative;
+        left: 1%;
+        @media screen and (max-width: 700px){
+        @include Display(column, space-between, flex-start);   
+            gap: 0.65rem;   
+        }
+        &_description{
+            font-weight: 100;
+            font-size: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            @media screen and (max-width: 1200px){
+                position: relative;
+                left: 4%;
+                gap: 8px;
+            }
+            button{
+                position: relative;
+                right: 2%;
+                display: inline;
+                margin-right: 1rem;
+                cursor: pointer;
+                border-radius: 0.7rem;
+                border: none;
+                height: 30px;
+                color: #fff;
+                background-color: #FF6060;
+                padding: 8px;
+            
+                &:hover{
+                    box-shadow: 0 0.1rem 7px rgb(0, 0, 0);
+                }}
+            div{
+             padding: 0.5rem;  
+             @media screen and (max-width: 700px){
+                position: relative;
+                left: -2%;
+            }
+            }}
+        &_infos{
+          @media screen and (max-width: 650px){
+                width: 100%;
+                @include Display(row-reverse, space-between, center);  
+                margin-top: -59px;  
+                position: absolute;
+                bottom: -153px; 
+            }
+            @media screen and (max-width: 900px){
+                position: relative;
+                top: 159px;
+                left: -25px
+            }
+            div{
+                display: flex;
+                justify-content: flex-end;
+                gap: 0.6rem;
+                @media screen and (max-width: 600px){
+                    position: relative;
+                    left: -4px;
+                    bottom: 49px;
+                    gap: 7px; 
+                }
+            }
+            &_nom{
+                align-self: center;
+                flex-direction: column;
+                @media screen and (max-width: 600px){
+                    padding-top: 57px;
+                }
+                @media screen and (max-width: 900px){
+                    position: relative;
+                    top: -26px;
+                }
+            }
+            img{
+                width: 64px;
+                height: 64px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 50%;
+                background-size: cover;
+                @media screen and (max-width: 1200px){
+                    position: relative;
+                    top: -22px;
+                }
+            }
+            .etoile{
+              font-size: 8px;
+              position: relative;
+              left: 10%;
+              bottom: -15px;
+              left: 8px;
+                @media screen and (max-width: 700px){
+                    position: relative;
+                    left: 30px;
+                    bottom: 0px;
+                    gap: 7px;
+            }
+            @media screen and (max-width: 900px){
+                position: relative;
+                left: -266%;
+                top: -56px;
+            }
+            
+            img{
+                width: 30px;
+                height: 30px;
+                background-size: cover;
+                background-position: center;
+                @media screen and (max-width: 650px){
+                width: 1.2rem;
+                height: 1.2rem;  
+                    }
+ }}}}}
+
+
+  .Logement {
+    &_infos {
+      .etoile {
+        order: 1;
+        @media screen and (max-width: 500px) {
+          order: -1;
+          margin-right: 0.6rem;
+        }
+      }
+    }
+  }
+
+
+
+  

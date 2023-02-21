@@ -1,0 +1,18 @@
+@import '../../sass/main.scss';
+$color-tertiary : #F7F7F7;
+
+.Gallery{
+    @include Display;
+    flex-wrap: wrap;
+    background-color: $color-tertiary;
+    padding: 3%;
+    gap: 2.7rem;
+    width: 100%;
+    border-radius: 1rem;
+
+@media screen and (max-width: 600px){  
+   padding: 11px;
+   gap: 1.7rem;
+}
+}
+  
