@@ -10,9 +10,13 @@ export default function NotFound() {
 				<h1 className='not_description_title'>404</h1>
 				<p className='not_description_content'>La page que vous recherchez n'existe pas.</p>
 			</div>
-				<Link className='not_description_return' to='/'>Retourner sur la page d'accueil</Link>
+				<Link className='not_description_return' to='/Kasa'>Retourner sur la page d'accueil</Link>
 		</div>
 	)
 
 
 	}
+
+
+
+  

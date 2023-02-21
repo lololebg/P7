@@ -75,6 +75,10 @@ $color-primary : #fff;
                 @media screen and (max-width: 600px){
                     padding-top: 57px;
                 }
+                @media screen and (max-width: 900px){
+                    position: relative;
+                    top: -26px;
+                }
             }
             img{
                 width: 64px;
@@ -83,6 +87,10 @@ $color-primary : #fff;
                 object-position: center;
                 border-radius: 50%;
                 background-size: cover;
+                @media screen and (max-width: 1200px){
+                    position: relative;
+                    top: -22px;
+                }
             }
             .etoile{
               font-size: 8px;
@@ -98,10 +106,10 @@ $color-primary : #fff;
             }
             @media screen and (max-width: 900px){
                 position: relative;
-                left: -290%;
-                top: -33px;
-            
+                left: -266%;
+                top: -56px;
             }
+            
             img{
                 width: 30px;
                 height: 30px;
@@ -113,3 +121,19 @@ $color-primary : #fff;
                     }
  }}}}}
 
+
+  .Logement {
+    &_infos {
+      .etoile {
+        order: 1;
+        @media screen and (max-width: 500px) {
+          order: -1;
+          margin-right: 0.6rem;
+        }
+      }
+    }
+  }
+
+
+
+  

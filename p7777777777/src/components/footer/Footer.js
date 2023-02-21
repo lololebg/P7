@@ -1,5 +1,5 @@
 import './footer.scss'
-import logo from '../../assets/logo_footer.png'
+import logo from '../../assets/footer.png'
 // fonction React qui retourne un composant de pied de page pour une application web
 
 export default function Footer() {
